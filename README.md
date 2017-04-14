@@ -1,6 +1,8 @@
 # Introduction
 Get Connected SMC helps San Mateo County residents understand what assistance programs they may be eligible for. The concept is to combine the ease of use of [Get CalFresh](https://getcalfresh.org/) with the power of the directory information found in [SMC Connect](https://www.smc-connect.org/).
 
+Here's an example of a commercial product we could use as a model: https://www.mrelief.com/#?category=All
+
 # Access to Food
 The first service area will be access to food. We will incorporate WIC, County food banks, and schools for referrals.
 
