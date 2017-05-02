@@ -3,6 +3,7 @@
 ## WIC
 
 - Family size
+  - Pregnant women = family size 2
 - Income
 - Children under 5 years old
 
@@ -33,3 +34,36 @@ OR
 AND
 
 - Participated in CalFresh or covered by Medi-Cal in the past 12 months
+
+## CalFresh
+* Family size
+* Income 
+
+### CalFresh elibible if
+* Family size 2, income $32,480
+* Family size 3, income $ 40,840
+* Family size 4, income $ 49,200
+* Family size 5, income $ 57,560
+* Family size 6, income $ 65,920
+* Family size 7, income $ 74,280
+* Family size 8, income $ 82,640
+* Family size 9
+* Family size 10
+* Family size 11
+* Family size 12
+
+##Gross income 200% FPL
+https://aspe.hhs.gov/poverty-guidelines
+
+2017 FPL
+
+1	$12,060 * 200%
+2	$16,240
+3	$20,420
+4	$24,600
+5	$28,780
+6	$32,960
+7	$37,140
+8	$41,320
+
+For families/households with more than 8 persons, add $4,180 for each additional person.
