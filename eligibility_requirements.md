@@ -52,7 +52,7 @@ AND
 * Family size 11
 * Family size 12
 
-##Gross income 200% FPL
+## Gross income 200% FPL
 https://aspe.hhs.gov/poverty-guidelines
 
 2017 FPL
