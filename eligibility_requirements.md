@@ -51,19 +51,3 @@ AND
 * Family size 10
 * Family size 11
 * Family size 12
-
-## Gross income 200% FPL
-https://aspe.hhs.gov/poverty-guidelines
-
-2017 FPL
-
-* 1	$12,060 * 200%
-* 2	$16,240
-* 3	$20,420
-* 4	$24,600
-* 5	$28,780
-* 6	$32,960
-* 7	$37,140
-* 8	$41,320
-
-For families/households with more than 8 persons, add $4,180 for each additional person.
