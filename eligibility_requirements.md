@@ -1,3 +1,53 @@
+# Get Connected SMC Eligibility Requirements by Family Size (1 - 8 people)
+
+## Family size 1
+- If family size = 1 AND income <= 1287 : Free meals at school eligible
+- If family size = 1 AND income <= 1831 : Reduced price meals at school eligible
+- If family size = 1 AND income <= 1962 : CalFresh eligible
+- No family size 1 for WIC
+
+## Family size 2
+- If family size = 2 AND income <= 1735 : Free meals at school eligible
+- If family size = 2 AND income <= 2469 : Reduced price meals at school eligible and WIC eligible
+- If family size = 2 AND income > 2469 AND enrolled in CalFesh or MediCal in the past year : WIC adjunctively eligible
+- If family size = 2 AND income <= 2656 : CalFresh eligible
+
+# Family size 3
+- If family size = 3 AND income <= 2184 : Free meals at school eligible
+- If family size = 3 AND income <= 3108 : Reduced price meals at school eligible and WIC eligible
+- If family size = 3 AND income > 3108 AND enrolled in CalFesh or MediCal in the past year : WIC adjunctively eligible
+- If family size = 3 AND income <= 3350 : CalFresh eligible
+
+# Family size 4
+- If family size = 4 AND income <= 2632 : Free meals at school eligible
+- If family size = 4 AND income <= 3746 : Reduced price meals at school eligible and WIC eligible
+- If family size = 4 AND income > 3746 AND enrolled in CalFesh or MediCal in the past year : WIC adjunctively eligible
+- If family size = 4 AND income <= 4042 : CalFresh eligible
+
+# Family size 5
+- If family size = 5 AND income <= 3081 : Free meals at school eligible
+- If family size = 5 AND income <= 4384 : Reduced price meals at school eligible and WIC eligible
+- If family size = 5 AND income > 4384 AND enrolled in CalFesh or MediCal in the past year : WIC adjunctively eligible
+- If family size = 5 AND income <= 4736 : CalFresh eligible
+
+# Family size 6
+- If family size = 6 AND income <= 3529 : Free meals at school eligible
+- If family size = 6 AND income <= 5022 : Reduced price meals at school eligible and WIC eligible
+- If family size = 6 AND income > 5022 AND enrolled in CalFesh or MediCal in the past year : WIC adjunctively eligible
+- If family size = 6 AND income <= 5430 : CalFresh eligible
+
+# Family size 7
+- If family size = 7 AND income <= 3979 : Free meals at school eligible
+- If family size = 7 AND income <= 5662 : Reduced price meals at school eligible and WIC eligible
+- If family size = 7 AND income > 5662 AND enrolled in CalFesh or MediCal in the past year : WIC adjunctively eligible
+- If family size = 7 AND income <= 6122 : CalFresh eligible
+
+# Family size 8
+- If family size = 8 AND income <= 4429 : Free meals at school eligible
+- If family size = 8 AND income <= 6303 : Reduced price meals at school eligible and WIC eligible
+- If family size = 8 AND income > 6303 AND enrolled in CalFesh or MediCal in the past year : WIC adjunctively eligible
+- If family size = 8 AND income <= 6816 : CalFresh eligible
+
 # Get Connected SMC eligibility requirements
 
 ## WIC
