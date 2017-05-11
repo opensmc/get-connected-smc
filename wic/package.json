@@ -6,8 +6,10 @@
     "react": "^15.4.2",
     "react-bootstrap": "^0.30.8",
     "react-dom": "^15.4.2",
+    "react-page": "^2.5.5",
     "survey-jquery": "^0.12.5",
-    "survey-react": "^0.12.5"
+    "survey-react": "^0.12.13",
+    "whatwg-fetch": "^2.0.3"
   },
   "devDependencies": {
     "react-scripts": "0.9.5"
