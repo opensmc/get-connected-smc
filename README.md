@@ -27,7 +27,7 @@ From State Department of Public Health (CDPH)
   - [ ] Medi-Cal
   - [ ] Medicare
   - [ ] Veterans
-  - [ ] WIC (Women, Infants, & Children)
-- [ ] Decision tree for eligibility for each requirements set
-- [ ] User experience flow depending on decision tree 
+  - [x] WIC (Women, Infants, & Children)
+- [x] Decision tree for eligibility for each requirements set
+- [x] User experience flow depending on decision tree 
 - [ ] Front end interface for users to determine likely eligibility
