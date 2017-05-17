@@ -3,13 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^15.4.2",
-    "react-bootstrap": "^0.30.8",
-    "react-dom": "^15.4.2",
-    "react-page": "^2.5.5",
-    "survey-jquery": "^0.12.5",
-    "survey-react": "^0.12.13",
-    "whatwg-fetch": "^2.0.3"
+    "bootstrap": "^3.3.7",
+    "react": "^15.5.4",
+    "react-bootstrap": "^0.31.0",
+    "react-dom": "^15.5.4",
+    "survey-react": "^0.12.14"
   },
   "devDependencies": {
     "react-scripts": "0.9.5"

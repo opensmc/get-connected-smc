@@ -8,9 +8,9 @@ class SurveyResults extends React.Component {
             let resultData = results.data;
 
             let respondentIncome = Number.parseInt(resultData.income, 10);
-            let maxIncomeBasedOnNumPeople = 12060 * ((resultData.numFamilyMembers - 1) * 4180) * 1.85;
+            let maxYearlyIncomeBasedOnNumPeople = 12060 + ((resultData.numFamilyMembers - 1) * 4180) * 1.85;
 
-            if (respondentIncome <= maxIncomeBasedOnNumPeople) {
+            if (respondentIncome <= maxYearlyIncomeBasedOnNumPeople) {
                 if (resultData.underFive === 'Y') {
                     msg = 'Your family qualifies because of your income and you have a child under 5.';
 
