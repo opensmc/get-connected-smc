@@ -4,6 +4,7 @@ import * as Survey from 'survey-react';
 import SurveyResults from './components/SurveyResults';
 import {surveyDefinition} from './surveyDefinition';
 import FoodLocations from "./components/FoodLocations";
+import {determineEligibility} from "./eligibilityRequirements";
 
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
@@ -18,27 +19,33 @@ class App extends React.Component {
     super(props);
     this.surveyComplete = this.surveyComplete.bind(this);
     this.state = {
-      resultData: '',
-      zipcode: ''
+      resultData: ''
     };
   }
 
-  surveyComplete(data) {
-    this.setState({resultData: data, zipcode: data.zipcode});
+  surveyComplete(result) {
+    let eligibility = determineEligibility(result.data.numFamilyMembers, result.data.income, result.data.isCalFresh, result.data.isMedical);
+    this.setState({resultData: result, eligibleFor: eligibility});
   }
 
   render() {
+    let zipcode = '';
+    if (this.state.resultData && this.state.resultData.data && this.state.resultData.data.zipcode) {
+      zipcode = this.state.resultData.data.zipcode;
+    }
     return (
       <div>
-        <Survey.Survey json={surveyDefinition} onComplete={this.surveyComplete}/>
-        <SurveyResults resultData={this.state.resultData}/>
-        <FoodLocations zipcode={this.state.zipcode}/>
+        <div className="survey">
+          <Survey.Survey json={surveyDefinition} onComplete={this.surveyComplete}/>
+        </div>
+        <SurveyResults resultData={this.state.resultData} eligibleFor={this.state.eligibleFor}/>
+        <FoodLocations zipcode={zipcode}/>
       </div>
     )
   }
 }
 
 
-ReactDOM.render(<App/>, document.getElementById("root"))
+ReactDOM.render(<App/>, document.getElementById("root"));
 
 
