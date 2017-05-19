@@ -1,81 +1,111 @@
+const allRequired = false;
+
 const surveyDefinition = {
     title: "WIC", showProgressBar: "top", pages: [
-        {
-            name: "page1", questions: [
-            {type: "text", name: "income", title: "What is your family's annual income?", isRequired: true}
-        ]
-        },
-        {
-            name: "page2", questions: [{
-            type: "text",
+      {
+        name: "page1",
+        elements: [
+          {
+            type: "rating",
             name: "numFamilyMembers",
-            title: "How many members are in your immediate family?",
-            isRequired: true
-        }
+            title: "How many people live in your household, including yourself?",
+            isRequired: allRequired,
+            rateValues: [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8+"
+            ]
+          }
         ]
-        },
+      },
+      {
+        name: "page2", elements: [
         {
-            name: "page3", questions: [{
-            type: "radiogroup", name: "pregnant",
-            title: "Are any of your family members currently pregnant?",
-            choices: [
-                {
-                    value: "Y",
-                    text: "Yes"
-                },
-                {
-                    value: "N",
-                    text: "No"
-                }
-            ],
-            isRequired: true
-        }]
-        },
-        {
-            name: "page4", questions: [{
-
-            type: "radiogroup", name: "underFive",
-            title: "Are there children ages 5 and under?",
-            choices: [
-                {
-                    value: "Y",
-                    text: "Yes"
-                },
-                {
-                    value: "N",
-                    text: "No"
-                }
-            ],
-            isRequired: true
-        }]
-        },
-        {
-            name: "page5", questions: [{
-
-
-            type: "radiogroup", name: "isCalFreshMediCal",
-            title: "How  you participated in either CalFresh or Medi-Cal in the past 12 months?",
-            choices: [
-                {
-                    value: "Y",
-                    text: "Yes"
-                },
-                {
-                    value: "N",
-                    text: "No"
-                }
-            ],
-            isRequired: true
-        }],
-        },
-        {
-            name: "page6", questions: [{
-
-            type: "text", name: "zipcode", title: "What zipcode are you in?", isRequired: true
-        }]
+          type: "rating",
+          name: "numChildren",
+          title: "How many children are in your household that are five years old or younger?",
+          isRequired: allRequired,
+          rateValues: [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5+"
+          ]
         }
+      ]
+      },
+      {
+        name: "page3", questions: [{
+        type: "radiogroup", name: "pregnant",
+        title: "Is anyone in your household pregnant?",
+        choices: [
+          {
+            value: "Y",
+            text: "Yes"
+          },
+          {
+            value: "N",
+            text: "No"
+          }
+        ],
+        isRequired: allRequired
+      }]
+      },
+      {
+        name: "page4", questions: [
+        {type: "text", name: "income", title: "What was your household income last month?", isRequired: allRequired}
+      ]
+      },
+
+      {
+        name: "page5", questions: [{
+        type: "text", name: "zipcode", title: "What is your zipcode?", isRequired: allRequired
+      }]
+      },
+
+      {
+        name: "page6", questions: [{
+        type: "radiogroup", name: "isMediCal",
+        title: "Has anyone in your household received Medi-Cal in the last year?",
+        choices: [
+          {
+            value: "Y",
+            text: "Yes"
+          },
+          {
+            value: "N",
+            text: "No"
+          }
+        ],
+        isRequired: allRequired
+      }],
+      },
+      {
+        name: "page7", questions: [{
+        type: "radiogroup", name: "isCalFresh",
+        title: "Has anyone in your household received CalFresh in the last year?",
+        choices: [
+          {
+            value: "Y",
+            text: "Yes"
+          },
+          {
+            value: "N",
+            text: "No"
+          }
+        ],
+        isRequired: allRequired
+      }],
+      },
     ]
-};
+  };
 
 export {surveyDefinition};
 
