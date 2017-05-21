@@ -31,3 +31,11 @@ From State Department of Public Health (CDPH)
 - [x] Decision tree for eligibility for each requirements set
 - [x] User experience flow depending on decision tree 
 - [ ] Front end interface for users to determine likely eligibility
+
+# Getting started
+Note: You must have [git](https://git-scm.com/downloads) and [npm](https://nodejs.org/en/) installed first
+1. `git clone https://github.com/opensmc/get-connected-smc.git`
+1. `cd get-connected-smc/wic`
+1. `npm install`
+1. `npm start`
+1. Open [http://localhost:3000](http://localhost:3000), if it doesn't already open for you
