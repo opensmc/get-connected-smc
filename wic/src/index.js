@@ -24,7 +24,7 @@ class App extends React.Component {
   }
 
   surveyComplete(result) {
-    let eligibility = determineEligibility(result.data.numFamilyMembers, result.data.income, result.data.isCalFresh, result.data.isMedical);
+    let eligibility = determineEligibility(result.data.numFamilyMembers, result.data.income, result.data.isCalFresh, result.data.isMediCal);
     this.setState({resultData: result, eligibleFor: eligibility});
   }
 
