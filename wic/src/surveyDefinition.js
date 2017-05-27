@@ -1,4 +1,4 @@
-const allRequired = false;
+const allRequired = true;
 
 const surveyDefinition = {
     title: "WIC", showProgressBar: "top", pages: [
