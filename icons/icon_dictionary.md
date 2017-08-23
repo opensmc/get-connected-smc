@@ -9,8 +9,8 @@
 	- credit School by scarlett mckay from the Noun Project
 	
 - WIC
- - noun_851501_cc.png
- - credit mother by DewDrops from the Noun Project
+	- noun_851501_cc.png
+ 	- credit mother by DewDrops from the Noun Project
  
 - Meals on Wheels (coming soon)
 	- noun_614012_cc.png
