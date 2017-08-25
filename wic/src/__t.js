@@ -1,8 +1,8 @@
 const strings = [
-  {freeSchoolMeals: "You qualify for free school meals"},
-  {reducedPriceSchoolMeals: "You qualify for reduced priced meals at school"},
+  {freeSchoolMeals: "You may qualify for free school meals"},
+  {reducedPriceSchoolMeals: "You may qualify for reduced priced meals at school"},
   {adjunctWIC: "You adjuctly qualify for WIC"},
-  {CalFresh: "You qualify for CalFresh"},
+  {CalFresh: "You may qualify for CalFresh"},
   {notEligible: "Sorry, you do not qualify for any of the programs"}
 ];
 
