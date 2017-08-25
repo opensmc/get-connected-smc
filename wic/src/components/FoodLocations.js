@@ -11,7 +11,7 @@ class FoodLocations extends React.Component {
 
     componentWillReceiveProps() {
         var self = this;
-        fetch('https://api.smc-connect.org/search?keyword=food&location=' + this.props.zipcode)
+        fetch('https://api.smc-connect.org/search?category=Food Pantry&location=' + this.props.zipcode)
             .then(function (response) {
                 return response.json();
             }).then(function (json) {
