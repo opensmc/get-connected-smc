@@ -22,7 +22,7 @@ From State Department of Public Health (CDPH)
 * Current federal poverty level numbers: https://liheapch.acf.hhs.gov/news/july16/FPG.htm
 
 # To do
-- [ ] Collect eligibility requirements
+- [x] Collect eligibility requirements
   - [ ] Health Insurance
   - [ ] Medi-Cal
   - [ ] Medicare
@@ -39,3 +39,6 @@ Note: You must have [git](https://git-scm.com/downloads) and [npm](https://nodej
 1. `npm install`
 1. `npm start`
 1. Open [http://localhost:3000](http://localhost:3000), if it doesn't already open for you
+
+# Public site
+You can see the site live: http://wic.surge.sh/
