@@ -1,6 +1,8 @@
 import React from 'react';
 import {__t} from '../__t';
 
+import FoodLocations from './FoodLocations'
+
 class SurveyResults extends React.Component {
     render() {
 
@@ -34,21 +36,42 @@ class SurveyResults extends React.Component {
       // }
       // return (<p>{msg}</p>);
 
-      let resultsMessage = [];
+      let results = [];
       if (this.props.eligibleFor) {
         if (this.props.eligibleFor.length >= 1) {
           for (let programs of this.props.eligibleFor) {
             for (let program of programs) {
-              resultsMessage.push(__t(program));
+              results.push(program);
             }
           }
         } else {
-          resultsMessage = __t('not.eligible');
+          results = 'not.eligible';
         }
       }
 
-      return <div>{resultsMessage.join(',')}</div>;
+      function Item(k) {
+        const data = __t(k.message);
+        return (
+          <div className={`card`}>
+            <img className={`card-img-top`} src={data.icon} alt="Card image cap" />
+            <div className={`card-body`}>
+              {/* <h4 className={`card-title`}>{data.key}</h4> */}
+              <p className={`card-text`}>{data.msg}</p>
+            </div>
+          </div>
+        );
+        return <a className={`nav-item nav-link`} href="#">{data.icon}</a>;
+      }
+
+      return (
+        <div>
+          <div className={`card-deck`}>
+            { results.map((item) => <Item key={item} message={item} />) }
+          </div>
+           <FoodLocations zipcode={this.props.zipcode}/>
+        </div>
+      );
     }
 }
 
-export default SurveyResults;
+export default SurveyResults
