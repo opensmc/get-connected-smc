@@ -40,7 +40,7 @@ class SmcSurvey extends React.Component {
       zipcode = this.state.resultData.data.zipcode;
     }
     return (
-      <div>
+      <div className="survey-outer-container">
          <div className="survey">
           <Survey.Survey json={surveyDefinition} onComplete={this.surveyComplete}/>
         </div>
