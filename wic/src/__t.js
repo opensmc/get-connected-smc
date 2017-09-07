@@ -21,7 +21,7 @@ const strings = {
   },
   notEligible: {
     key: 'notEligible',
-    msg: 'Sorry, you do not qualify for any of the programs',
+    msg: 'Your income does not meet the eligibility requirements for the Federal Food Programs but here are local food resources',
     icon: ''
   }
 };

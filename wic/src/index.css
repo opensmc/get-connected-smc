@@ -31,3 +31,8 @@ h5, input.form-control{
 input[type=button] {
   font-size: 2.0rem;
 }
+
+/* .card {
+  max-height: 450px;
+  max-width: 450px;
+} */
