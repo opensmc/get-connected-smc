@@ -1,7 +1,7 @@
 const allRequired = true;
 
 const surveyDefinition = {
-    title: "WIC", showProgressBar: "top", pages: [
+      showProgressBar: "top", pages: [
       {
         name: "page1", questions: [{
           type: "radiogroup", name: "any_children",
@@ -103,7 +103,7 @@ const surveyDefinition = {
       },
       {
         name: "page4", questions: [
-        {type: "text", name: "income", title: "What was your household income last month?", isRequired: allRequired}
+        {type: "text", name: "income", title: "What was your household income last month?", isRequired: allRequired, validators: [{ type: "numeric", minValue: 1, maxValue: 10000 }]      }
       ]
       },
 
