@@ -22,7 +22,7 @@ const strings = {
   notEligible: {
     key: 'notEligible',
     msg: 'Your income does not meet the eligibility requirements for the Federal Food Programs but here are local food resources',
-    icon: ''
+    icon: 'icons/Life-Perseverance-Bricks-Nature-Determination-335446.jpg'
   }
 };
 

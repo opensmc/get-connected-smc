@@ -15,15 +15,17 @@ function doSurvey() {
 }
 
 const Home = () => (
-  <div>
+  <div className="page-container">
+    <img className="main-logo" src='/icons/logo.png' />
     <div className='jumbotron'>
-      <h3 className="display-3">Get help putting food on the table</h3>
-      <p className="lead">See which Food Programs you are eligible for...</p>
-      <p className="lead">
-        <a className="btn btn-primary btn-lg" href="#" role="button" onClick={doSurvey}>{start}</a>
-      </p>
-      <hr className="my-4" />
-
+      <div className="header-items-container">
+        <h3 className="display-3">Get help putting food on the table</h3>
+        <p className="lead">See which Food Programs you are eligible for...</p>
+        <p className="lead">
+          <a className="btn btn-primary btn-lg" href="#" role="button" onClick={doSurvey}>{start}</a>
+        </p>
+        <hr className="my-4" />
+      </div>
       <div className="lead">
         <div id="survey"></div>
       </div>
