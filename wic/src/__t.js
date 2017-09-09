@@ -14,6 +14,11 @@ const strings = {
     msg: 'You adjuctly qualify for WIC',
     icon: 'icons/noun_851501_cc.png'
   },
+  WIC: {
+    key: 'WIC',
+    msg: 'You are WIC eligible',
+    icon: 'icons/noun_851501_cc.png'
+  },
   CalFresh: {
     key: 'CalFresh',
     msg: 'You may qualify for CalFresh',
