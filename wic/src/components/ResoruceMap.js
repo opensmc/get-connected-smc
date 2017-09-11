@@ -14,7 +14,7 @@ export default class ResoruceMap extends Component {
       address: this.props.zipcode || '94010'
     }
     new window.google.maps.Geocoder().geocode(geocode_options, (results, status) => {
-      if (status == 'OK') {
+      if (/OK$/i.test(status)) {
         const mapOptions = {
           zoom: 13,
           center: results[0].geometry.location

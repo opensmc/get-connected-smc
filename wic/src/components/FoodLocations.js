@@ -1,6 +1,5 @@
 import React, {PropTypes, Component} from 'react';
 import ReactDOM from 'react-dom';
-// import shouldPureComponentUpdate from 'react';
 import ResoruceMap from './ResoruceMap';
 import ResourceTable from './ResourceTable';
 
