@@ -82,6 +82,11 @@ body {
   width: 60%;
 }
 
+.resource-map {
+  width: 100%;
+  height: 600px;
+}
+
 /**
   Styles for survey results
 */
