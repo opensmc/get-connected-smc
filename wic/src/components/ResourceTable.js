@@ -6,12 +6,14 @@ import React from 'react';
 class ResourceTable extends React.Component {
   render() {
     function ResourceTableRow(data) {
-        const location = data.location;
-        return <tr>
-            <td>{location.name || ''}</td>
-            <td>{location.phones && location.phones.length ? location.phones[0].number : ''}</td>
-            <td>{location.address && location.address.address_1 ? location.address.address_1 : ''}</td>
-        </tr>;
+      const location = data.location;
+      return <tr>
+        <td>
+          {location.organization && location.organization.website ? <a target='_blank' href={location.organization.website}>{location.name || ''}</a> : location.name || ''}
+        </td>
+        <td>{location.phones && location.phones.length ? location.phones[0].number : ''}</td>
+        <td>{location.address && location.address.address_1 ? location.address.address_1 : ''}</td>
+      </tr>;
     }
 
     return (
