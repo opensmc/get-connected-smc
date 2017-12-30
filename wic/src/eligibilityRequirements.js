@@ -49,7 +49,7 @@ let eligibityRequirements = [
    *
    * returns array of programs eligible for
    */
-  function determineEligibility(familySize, monthlyIncome, isRecentCalFresh, isRecentMediCal) {
+  function determineEligibility(familySize, monthlyIncome, isRecentCalFresh, isRecentMediCal, isSenior) {
     let eligibleFor = [];
 
     // Clean up inputs
@@ -61,6 +61,10 @@ let eligibityRequirements = [
     monthlyIncome = parseFloat(monthlyIncome);
     isRecentCalFresh = (isRecentCalFresh === 'Y');
     isRecentMediCal = (isRecentMediCal === 'Y');
+
+    if (isSenior === 'Y') {
+      eligibleFor.push(['homeDeliveryMeals']);
+    }
 
     for (let requirement of eligibityRequirements) {
       if (familySize === requirement.familySize) {

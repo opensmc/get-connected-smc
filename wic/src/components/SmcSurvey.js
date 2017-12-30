@@ -13,6 +13,8 @@ import '../index.css';
 
 Survey.Survey.cssType = "bootstrap";
 
+// window.survey = new Survey.Model(surveyDefinition);
+
 class SmcSurvey extends React.Component {
   constructor(props) {
     super(props);
@@ -23,7 +25,14 @@ class SmcSurvey extends React.Component {
   }
 
   surveyComplete(result) {
-    const eligibility = determineEligibility(result.data.numFamilyMembers, result.data.income, result.data.isCalFresh, result.data.isMediCal);
+    console.log(result.data);
+    const eligibility = determineEligibility(
+      result.data.numFamilyMembers,
+      result.data.income,
+      result.data.isCalFresh,
+      result.data.isMediCal,
+      result.data.isSenior
+    );
     const zipcode = result && result.data && result.data.zipcode ? result.data.zipcode : '';
 
     this.setState({resultData: result.data, eligibleFor: eligibility, zipcode: zipcode});
@@ -35,7 +44,7 @@ class SmcSurvey extends React.Component {
     return (
       <div className="survey-outer-container">
          <div className="survey">
-          <Survey.Survey json={surveyDefinition} onComplete={this.surveyComplete}/>
+          <Survey.Survey model={new Survey.Model(surveyDefinition)} onComplete={this.surveyComplete}/>
         </div>
       </div>
     )

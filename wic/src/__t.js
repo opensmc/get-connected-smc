@@ -1,4 +1,9 @@
 const strings = {
+  homeDeliveryMeals: {
+    key: 'homeDeliveryMeals',
+    msg: 'You may qualify for Home Delivery Meals',
+    icon: 'icons/noun_744795_cc.png'
+  },
   freeSchoolMeals: {
     key: 'freeSchoolMeals',
     msg: 'You may qualify for free school meals',
