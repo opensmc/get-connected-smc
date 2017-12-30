@@ -2,8 +2,6 @@ import React from 'react'
 import ReactDOM from 'react-dom';
 import Survey from './SmcSurvey.js'
 
-const start_here = 'Start Here';
-const restart    = 'Restart';
 let start = 'Start Here';
 
 function doSurvey() {

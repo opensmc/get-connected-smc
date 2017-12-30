@@ -15,7 +15,3 @@
 - Meals on Wheels (coming soon)
 	- noun_614012_cc.png
 	- credit Van by Anatoly Dudko from the Noun Project
-
-- Not eligible
-	- Life-Perseverance-Bricks-Nature-Determination-335446.jpg
-	- ??
