@@ -21,7 +21,7 @@ export default class ResoruceMap extends Component {
         };
         map = new window.google.maps.Map(document.getElementById('map'), mapOptions);
       } else {
-        console.log('Geocode was not successful for the following reason: ' + status);
+        console.error('Geocode was not successful for the following reason: ' + status);
       }
     });
   }

@@ -22,7 +22,7 @@ class FoodLocations extends React.Component {
         self.setState({locations: locations});
         return true;
       }).catch((ex) => {
-        console.log('[FoodLocations.js] parsing failed', ex);
+        console.error('[FoodLocations.js] parsing failed', ex);
       });
     }
 

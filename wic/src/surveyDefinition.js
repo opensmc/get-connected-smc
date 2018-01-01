@@ -12,7 +12,7 @@ const surveyDefinition = {
         {
           type: "radiogroup",
           name: "isSenior",
-          title: "Is there an older adult, age 60 & over, in your household??",
+          title: "Is there an older adult, age 60 & over, in your household?",
           choices: yes_no,
           isRequired: true
         }
