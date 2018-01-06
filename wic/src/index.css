@@ -11,23 +11,78 @@ body {
   font-size: 2rem;
 }
 
-.survey {
-  text-align: center;
-}
+#survey {
+  margin: 0 auto;
 
-.survey input {
-  margin:0 auto;
-  max-width: 10em;
 }
 
 h5, input.form-control{
   font-size: 2rem;
 }
 
-.alert {
-  font-size: 1.6rem;
-}
-
 input[type=button] {
   font-size: 2.0rem;
+}
+
+.main-logo {
+  padding: 20px 0 40px 5px;
+  height: 150px;
+}
+
+body {
+  background-image: url('/icons/family_food_2.jpg');
+  background-size: 120%;
+  background-repeat: no-repeat;
+
+}
+
+.header-items-container {
+  padding-left: 10px;
+}
+
+.page-container {
+  opacity: 0.9;
+}
+
+.jumbotron {
+  -webkit-box-shadow: 9px 9px 6px 0px rgba(50, 50, 50, 0.7);
+  -moz-box-shadow:    9px 9px 6px 0px rgba(50, 50, 50, 0.7);
+  box-shadow:         9px 9px 6px 0px rgba(50, 50, 50, 0.7);
+}
+
+/* Don't center things */
+
+.survey input {
+  max-width: 10em;
+}
+
+.survey .panel-body {
+  height: 200px;
+}
+
+.survey .form-inline .radio {
+  width: auto !important;
+  padding-right: 1rem;
+}
+
+.panel-body .progress.center-block {
+  margin: 10px 0;
+}
+
+.alert {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  /* match progress bar width */
+  width: 60%;
+}
+
+.panel-footer {
+  /* match progress bar width */
+  width: 60%;
+}
+
+.resource-map {
+  width: 100%;
+  height: 600px;
 }

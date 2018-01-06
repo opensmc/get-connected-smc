@@ -1,48 +1,42 @@
 import React, {PropTypes, Component} from 'react';
 import ReactDOM from 'react-dom';
-
-import shouldPureComponentUpdate from 'react';
-
-import Gmap from './Gmap';
-
+import ResoruceMap from './ResoruceMap';
 import ResourceTable from './ResourceTable';
-
-const markers = [{
-    position: {
-      lat: 25.0112183,
-      lng: 121.52067570000001,
-    },
-    key: `Taiwan`,
-    defaultAnimation: 2,
-}];
 
 class FoodLocations extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            apiResultData: ''
-        };
+        this.state = {};
     }
 
-    componentWillReceiveProps() {
-      console.log('componentWillReceiveProps');
-      var self = this;
-      fetch('https://api.smc-connect.org/search?category=Food Pantry&location=' + this.props.zipcode).then(function (response) {
+    findFoodLocations() {
+      const self = this;
+      const url = `https://api.smc-connect.org/search?category=Food Pantry&location=${this.props.zipcode}`;
+      return Promise.resolve(true).then(() => {
+        return Promise.resolve(fetch(url));
+      }).then((response) => {
         return response.json();
-      }).then(function (json) {
-        self.setState({apiResultData: json});
+      }).then((locations) => {
+        return locations.filter((location) => location && location.longitude && location.latitude);
+      }).then((locations) => {
+        self.setState({locations: locations});
         return true;
       }).catch((ex) => {
-        console.log('parsing failed', ex);
-      })
-    };
+        console.error('[FoodLocations.js] parsing failed', ex);
+      });
+    }
+
+    componentDidMount() {
+      this.findFoodLocations();
+    }
 
     render() {
-        return (
-          <div>
-            <Gmap />
-          </div>
-        )
+      return (
+        <div>
+          <ResoruceMap zipcode={this.props.zipcode} locations={this.state.locations || []}/>
+          <ResourceTable locations={this.state.locations || []}/>
+        </div>
+      )
     }
 }
 

@@ -23,26 +23,25 @@ class SmcSurvey extends React.Component {
   }
 
   surveyComplete(result) {
-    let eligibility = determineEligibility(result.data.numFamilyMembers, result.data.income, result.data.isCalFresh, result.data.isMediCal);
-    this.setState({resultData: result, eligibleFor: eligibility});
+    const eligibility = determineEligibility(
+      result.data.numFamilyMembers,
+      result.data.income,
+      result.data.isCalFresh,
+      result.data.isMediCal,
+      result.data.isSenior
+    );
+    const zipcode = result && result.data && result.data.zipcode ? result.data.zipcode : '';
 
-    let zipcode = '';
-    if (this.state.resultData && this.state.resultData.data && this.state.resultData.data.zipcode) {
-      zipcode = this.state.resultData.data.zipcode;
-    }
+    this.setState({resultData: result.data, eligibleFor: eligibility, zipcode: zipcode});
 
-    ReactDOM.render(<SurveyResults resultData={result} eligibleFor={eligibility} zipcode={zipcode}/>, document.getElementById("survey"));
+    ReactDOM.render(<SurveyResults resultData={result.data} eligibleFor={eligibility} zipcode={zipcode}/>, document.getElementById("survey"));
   }
 
   render() {
-    let zipcode = '';
-    if (this.state.resultData && this.state.resultData.data && this.state.resultData.data.zipcode) {
-      zipcode = this.state.resultData.data.zipcode;
-    }
     return (
-      <div>
+      <div className="survey-outer-container">
          <div className="survey">
-          <Survey.Survey json={surveyDefinition} onComplete={this.surveyComplete}/>
+          <Survey.Survey model={new Survey.Model(surveyDefinition)} onComplete={this.surveyComplete}/>
         </div>
       </div>
     )
