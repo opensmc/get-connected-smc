@@ -13,8 +13,6 @@ import '../index.css';
 
 Survey.Survey.cssType = "bootstrap";
 
-// window.survey = new Survey.Model(surveyDefinition);
-
 class SmcSurvey extends React.Component {
   constructor(props) {
     super(props);

@@ -27,15 +27,20 @@ export default class ResoruceMap extends Component {
   }
 
   componentDidUpdate() {
-    if (!map || !this.props.locations || !this.props.locations.length) return true;
+    if (!map || !this.props.locations || !this.props.locations.length) {
+      return true;
+    }
+
     this.props.locations.forEach((location) => {
-      if (!location.longitude || !location.latitude) return false;
+      if (!location.longitude || !location.latitude) {
+        return false;
+      }
+
       new window.google.maps.Marker({
         map: map,
         position: {lat: location.latitude, lng: location.longitude},
         draggable: false,
         animation: window.google.maps.Animation.DROP,
-        // title: location.name,
         label: location.name
       });
     });
