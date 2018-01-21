@@ -32,7 +32,7 @@ const strings = {
   CalFresh: {
     key: 'CalFresh',
     msg: 'You may qualify for CalFresh',
-    icon: 'icons/noun_1113355_cc.png',
+    icon: 'icons/CalFresh.png',
     url: 'https://getcalfresh.org/'
   },
   notEligible: {
