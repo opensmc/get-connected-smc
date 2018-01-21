@@ -15,9 +15,12 @@ body {
   margin: 0 auto;
 
 }
+.alert.alert-danger {
+  margin-bottom: 5px;
+}
 
-h5, input.form-control{
-  font-size: 2rem;
+h5 span, .alert.alert-danger {
+  font-size: 21px;
 }
 
 input[type=button] {
