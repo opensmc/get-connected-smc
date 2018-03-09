@@ -23,6 +23,8 @@ class SmcSurvey extends React.Component {
   }
 
   surveyComplete(result) {
+    this.props.onSurveyComplete();
+    
     const eligibility = determineEligibility(
       result.data.numFamilyMembers,
       result.data.income,

@@ -82,6 +82,12 @@ body {
   width: 60%;
 }
 
+.call-forimmediate-help {
+  background-color: #FFF;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
 .resource-map {
   width: 100%;
   height: 600px;
