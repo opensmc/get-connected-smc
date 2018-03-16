@@ -37,7 +37,7 @@ const surveyDefinition = {
         {
           type: "rating",
           name: "numChildrenUnder5",
-          title: "How many children are in your household that are five years old or younger?",
+          title: "How many children are in your household are five years old or younger?",
           isRequired: true,
           rateValues: [ "0", "1", "2", "3", "4", "5+"]
         }
@@ -64,7 +64,7 @@ const surveyDefinition = {
           name: "numFamilyMembers",
           title: "How many people live in your household, including yourself?",
           isRequired: true,
-          rateValues: [ "0", "1", "2", "3", "4", "5", "6", "7", "8+" ]
+          rateValues: [ "1", "2", "3", "4", "5", "6", "7", "8+" ]
         }
       ]
     },
