@@ -22,14 +22,14 @@ const strings = {
   },
   adjunctWIC: {
     key: 'adjunctWIC',
-    msg: 'You adjunctly qualify for WIC',
+    msg: 'You may adjunctly qualify for WIC',
     sub_msg: 'Women and Children',
     icon: 'icons/noun_851501_cc.png',
     url: 'http://www.smchealth.org/wic'
   },
   WIC: {
     key: 'WIC',
-    msg: 'You are WIC eligible',
+    msg: 'You may be WIC eligible',
     sub_msg: 'Women and Children',
     icon: 'icons/noun_851501_cc.png',
     url: 'http://www.smchealth.org/wic'
