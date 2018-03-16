@@ -22,7 +22,7 @@ class SurveyResults extends React.Component {
         const data = __t(k.message);
         return (
           <div className={`card`}>
-            <a l href={data.url}><img className={`card-img-top`} src={data.icon} alt="Card image cap" /></a>
+            <a l target='_blank' href={data.url}><img className={`card-img-top`} src={data.icon} alt="Card image cap" /></a>
             <div className={`card-body`}>
               <p className={`card-text`}>{data.msg}</p>
               <p className={`card-sub-text`}>{data.sub_msg}</p>
