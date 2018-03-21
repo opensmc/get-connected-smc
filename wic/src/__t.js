@@ -20,13 +20,6 @@ const strings = {
     icon: 'icons/noun_1048458_cc.png',
     url: 'http://www.smcoe.org/about-smcoe/districts-and-schools/'
   },
-  adjunctWIC: {
-    key: 'adjunctWIC',
-    msg: 'You may adjunctly qualify for WIC',
-    sub_msg: 'Women and Children',
-    icon: 'icons/noun_851501_cc.png',
-    url: 'http://www.smchealth.org/wic'
-  },
   WIC: {
     key: 'WIC',
     msg: 'You may be WIC eligible',
