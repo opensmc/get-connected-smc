@@ -22,7 +22,7 @@ const surveyDefinition = {
       elements: [
         {
           type: "radiogroup",
-          name: "any_children",
+          name: "anyChildren",
           title: "Are there any children in your household?",
           choices: yes_no,
           isRequired: true
@@ -31,13 +31,13 @@ const surveyDefinition = {
     },
     {
       visible: false,
-      visibleIf: "{any_children} = 'Y'",
+      visibleIf: "{anyChildren} = 'Y'",
       name: "childrenUnderFive",
       elements: [
         {
           type: "rating",
           name: "numChildrenUnder5",
-          title: "How many children are in your household that are five years old or younger?",
+          title: "How many children are in your household are five years old or younger?",
           isRequired: true,
           rateValues: [ "0", "1", "2", "3", "4", "5+"]
         }
@@ -45,7 +45,7 @@ const surveyDefinition = {
     },
     {
       visible: false,
-      visibleIf: "{any_children} = 'Y'",
+      visibleIf: "{anyChildren} = 'Y'",
       name: "childrenTotal",
       elements: [
         {
@@ -53,7 +53,7 @@ const surveyDefinition = {
           name: "numChildrenTotal",
           title: "How many children total are in your household?",
           isRequired: true,
-          rateValues: [ "0", "1", "2", "3", "4", "5", "6", "7", "8+" ]
+          rateValues: [ "1", "2", "3", "4", "5", "6", "7", "8+" ]
         }
       ]
     },
@@ -64,7 +64,7 @@ const surveyDefinition = {
           name: "numFamilyMembers",
           title: "How many people live in your household, including yourself?",
           isRequired: true,
-          rateValues: [ "0", "1", "2", "3", "4", "5", "6", "7", "8+" ]
+          rateValues: [ "1", "2", "3", "4", "5", "6", "7", "8+" ]
         }
       ]
     },
@@ -72,7 +72,7 @@ const surveyDefinition = {
       elements: [
         {
           type: "radiogroup",
-          name: "pregnant",
+          name: "isPregnant",
           title: "Is anyone in your household pregnant?",
           choices: yes_no,
           isRequired: true

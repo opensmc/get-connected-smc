@@ -30,7 +30,10 @@ class SmcSurvey extends React.Component {
       result.data.income,
       result.data.isCalFresh,
       result.data.isMediCal,
-      result.data.isSenior
+      result.data.isSenior,
+      result.data.anyChildren,
+      result.data.isPregnant,
+      result.data.numChildrenUnder5
     );
     const zipcode = result && result.data && result.data.zipcode ? result.data.zipcode : '';
 
