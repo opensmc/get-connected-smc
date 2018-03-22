@@ -10,14 +10,14 @@ const strings = {
     key: 'freeSchoolMeals',
     msg: 'You may qualify for free school meals',
     sub_msg: 'School age children',
-    icon: 'icons/noun_614012_cc.png',
+    icon: 'icons/noun_1048458_cc.jpg',
     url: 'http://www.smcoe.org/about-smcoe/districts-and-schools/'
   },
   reducedPriceSchoolMeals: {
     key: 'reducedPriceSchoolMeals',
     msg: 'You may qualify for reduced priced meals at school',
     sub_msg: 'School age children',
-    icon: 'icons/noun_1048458_cc.png',
+    icon: 'icons/noun_1048458_cc.jpg',
     url: 'http://www.smcoe.org/about-smcoe/districts-and-schools/'
   },
   WIC: {

@@ -5,7 +5,7 @@
 	- credit Food by asianson.design from the Noun Project
 	
 - Free and reduced price meals at school
-	- noun_1048458_cc.png
+	- noun_1048458_cc.jpg
 	- credit School by scarlett mckay from the Noun Project
 	
 - WIC
