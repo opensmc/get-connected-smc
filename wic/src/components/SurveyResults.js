@@ -36,21 +36,16 @@ class SurveyResults extends React.Component {
         <div>
           <div className='call-forimmediate-help'>
             <p><strong>Need help getting food now?</strong></p>
-            <p>
-              <div>Call Food Connection at 1-800-984-3663</div>
-              <div>Monday - Friday, 8:00 am - 5:00 pm.</div>
-            </p>
-            <p>
-              <div>Staff members speak English, divish, Vietnamese, Chinese (Cantonese and Mandarin), and Tagalog. Three-way interpretation is available for other languages.</div>
-              <div>Call 211 after hours</div>
-              <div>24/7, free, confidential, available in multiple languages. Operated by United Way Bay Area.</div>
-            </p>
-            <p>            
-              <div>Email Food Connection at foodconnection@shfb.org.</div>
-            </p>
-            <p>
-              <div>Text "Web Connect" at 408-455-5181</div>
-            </p>
+            <br />
+            <p>Contact Second Harvest Food Bank:</p>
+            <ul>
+              <li>Visit their  <a href="SHFB.org/getfood">website.</a></li>
+              <li>Call <a href="+1-800-984-3663">1-800-984-3663</a></li>
+              <li>Send them an <a href="mailto:food@shfb.org">email</a>.</li>
+              <li>Text "GETFOOD" to <a href="+1-408-455-5187">1-408-455-5181</a></li>
+            </ul>
+            <br />
+            <p>Staff members speak English, Spanish, Vietnamese, Chinese (Cantonese and Mandarin) and Tagalog. Three-way interpretation is available for other languages.</p>            
           </div>
           <div className={`card-deck`}>
             { results.map((item) => <Item key={item} message={item} />) }
