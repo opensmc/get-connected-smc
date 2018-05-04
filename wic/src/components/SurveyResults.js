@@ -45,7 +45,7 @@ class SurveyResults extends React.Component {
               <li>Text "GETFOOD" to <a href="+1-408-455-5187">1-408-455-5181</a></li>
             </ul>
             <br />
-            <p>Staff members speak English, Spanish, Vietnamese, Chinese (Cantonese and Mandarin) and Tagalog. Three-way interpretation is available for other languages.</p>            
+            <p>Staff members speak English, Spanish, Vietnamese, Chinese (Cantonese and Mandarin) and Tagalog. Three-way interpretation is available for other languages.</p>
           </div>
           <div className={`card-deck`}>
             { results.map((item) => <Item key={item} message={item} />) }

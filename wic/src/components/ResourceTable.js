@@ -7,10 +7,9 @@ class ResourceTable extends React.Component {
   render() {
     function ResourceTableRow(data) {
       const location = data.location;
+      const website = (location.organization && location.organization.website) || location.website;
       return <tr>
-        <td>
-          {location.organization && location.organization.website ? <a target='_blank' href={location.organization.website}>{location.name || ''}</a> : location.name || ''}
-        </td>
+        <td>{website ? <a target='_blank' href={website}>{location.name || ''}</a> : location.name || ''}</td>
         <td>{location.phones && location.phones.length ? location.phones[0].number : ''}</td>
         <td>{location.address && location.address.address_1 ? location.address.address_1 : ''}</td>
       </tr>;
