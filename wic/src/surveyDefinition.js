@@ -1,6 +1,7 @@
 const yes_no = [{ value: "Y", text: "Yes" }, { value: "N", text: "No" } ];
 
 const surveyDefinition = {
+  requiredText: "",
   showProgressBar: "top",
   completeText: "Finish",
   pageNextText: "Continue",
