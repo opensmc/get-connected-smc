@@ -29,7 +29,7 @@ class Home extends React.Component {
   resetHomeState = () => {
     this.setState({
       surveyComplete: false
-    });    
+    });
   }
   surveyStartText = () => {
     return (
@@ -42,7 +42,7 @@ class Home extends React.Component {
   render() {
     return (
       <div className="page-container">
-        <img className="main-logo" src='/icons/logo.png' />
+        <img className="main-logo" src='/icons/logo_1024x1024.png' />
         <div className='jumbotron'>
           <div className="header-items-container">
             {
