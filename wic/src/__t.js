@@ -3,7 +3,7 @@ const strings = {
     key: 'homeDeliveryMeals',
     msg: 'You qualify for free lunch at dining sites.',
     sub_msg: 'Click here to learn more',
-    icon: 'icons/logo_128x128.png',
+    icon: 'icons/logo_900x600.png',
     url: 'http://www.smchealth.org/general-information/where-seniors-can-go-nutritious-meals'
   },
   freeSchoolMeals: {
