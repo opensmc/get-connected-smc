@@ -39,7 +39,7 @@ class SurveyResults extends React.Component {
             <br />
             <p>Contact Second Harvest Food Bank:</p>
             <ul>
-              <li>Visit their  <a href="SHFB.org/getfood">website.</a></li>
+              <li>Visit their  <a href="https://www.shfb.org/getfood">website.</a></li>
               <li>Call <a href="+1-800-984-3663">1-800-984-3663</a></li>
               <li>Send them an <a href="mailto:food@shfb.org">email</a>.</li>
               <li>Text "GETFOOD" to <a href="+1-408-455-5187">1-408-455-5181</a></li>
